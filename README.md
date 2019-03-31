@@ -15,6 +15,20 @@ pip install -r requirements.txt
 
 ```
 
+文件结构说明：
+
+```text
+.
+├── README.md                    # 说明
+├── chromedriver                 # Mac 版谷歌浏览器确定
+├── chromedriver-linux           # Linux 版
+├── chromedriver.exe             # Windows 版
+├── follow.py                    # 启动程序
+├── requirements.txt             # 相关依赖
+└── yuque.csv                    # 用户数据
+
+```
+
 
 ### 用户数据导入 Mysql
 
