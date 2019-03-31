@@ -43,7 +43,8 @@ pip install -r requirements.txt
 数据库连接信息：
 ```python
 # 连接database
-conn = pymysql.connect(host="127.0.0.1", user="XXXX", password="XXXX", database="XXXX", charset="utf8")  
+conn = pymysql.connect(host="127.0.0.1", user="XXXX", password="XXXX", 
+    database="XXXX", charset="utf8")  
 
 # 替换成你自己的数据库即可。
 ```
@@ -73,6 +74,8 @@ password.send_keys('xxxxxx') # 这里替换成你的密码
 ```
 
 That's all.
+
+
 
 
 
