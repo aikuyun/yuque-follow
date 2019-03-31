@@ -3,7 +3,9 @@
 
 ### 初始化项目
 
-git clone XXXX
+```bash
+
+git clone https://github.com/aikuyun/yuque-follow.git
 
 
 cd yuque-follow
@@ -11,10 +13,14 @@ cd yuque-follow
 
 pip install -r requirements.txt
 
+```
+
 
 ### 用户数据导入 Mysql
 
-也可以自己选择直接读 CSV 的 ID 信息。
+把yuque.csv 导入mysql 数据库。
+
+也可以自己选择使用 python 直接读 CSV 的 ID 信息。（本次读的数据库）
 
 
 ### 自定义部分代码
@@ -54,5 +60,5 @@ password.send_keys('xxxxxx') # 这里替换成你的密码
 
 That's all.
 
-### Action
+
 
