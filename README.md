@@ -27,7 +27,7 @@ pip install -r requirements.txt
 ├── chromedriver.exe             # Windows 版
 ├── follow.py                    # 启动程序
 ├── requirements.txt             # 相关依赖
-└── yuque.csv                    # 用户数据
+└── yuque.csv                    # 用户 Id 信息
 
 ```
 
@@ -64,7 +64,7 @@ driver = webdriver.Chrome(executable_path='./chromedriver')
 
 > 我已经在目录下放了三个版本供大家选择。 chrome浏览器驱动,我这里选的是 Mac 版。windows 用户这里改成 ./chromedriver.exe ; Linux 用户请改成 ./chromedriver-linux
 
-
+如果遇到版本问题可以访问：https://npm.taobao.org/mirrors/chromedriver 下载适合你的驱动版本。
 
 添加自己的语雀用户名和密码
 

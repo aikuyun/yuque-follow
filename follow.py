@@ -9,18 +9,15 @@ import operator
 
 from selenium.common.exceptions import TimeoutException
 
-from time import sleep
-import os
-
 
 if __name__ == '__main__':
 
     # 连接database
-    conn = pymysql.connect(host="127.0.0.1", user="XXXX", password="XXXX", database="XXXX", charset="utf8")  # 替换成你自己的数据库即可。
+    conn = pymysql.connect(host="127.0.0.1", user="root", password="root", database="test", charset="utf8")  # 替换成你自己的数据库即可。
 
     # 拿到数据 id 字段
 
-    sql = "select id from yuque "
+    sql = "select id from yuque_new "
 
     cur = conn.cursor()
 
@@ -52,11 +49,13 @@ if __name__ == '__main__':
 
     btn_login = WebDriverWait(driver, 5).until(lambda x: x.find_element_by_class_name('btn-login'))
 
-    name.send_keys('xxxxxxx') # 这里替换成你的用户名
+    name.send_keys('xx') # 这里xx替换成你的用户名
 
-    password.send_keys('xxxxxx') # 这里替换成你的密码
+    password.send_keys('xx') # 这里替xx换成你的密码
 
     btn_login.click()  # 点击登录
+
+    driver.get(url2)
 
     btn = WebDriverWait(driver, 5).until(lambda x: x.find_element_by_class_name('btn-follow'))
 
