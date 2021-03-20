@@ -9,7 +9,7 @@ Fabric==1.14.0
 idna==2.7
 invoke==1.2.0
 ipaddress==1.0.22
-Jinja2==2.7.3
+Jinja2==2.11.3
 kazoo==2.5.0
 Markdown==2.6.8
 MarkupSafe==1.0
